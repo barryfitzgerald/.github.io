@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Windows-8-like Animations with CSS3 and jQuery</title>
+
+  <link rel="stylesheet" href="css/demo-styles.css" />
+  <script src="js/modernizr-1.5.min.js"></script>
+
+</head>
+
+<body ccID="361">
+ <header ccID="370">
+   <!--<a href="http://sarasoueidan.com/blog/windows8-animations/" class="tutorial-link">Read Tutorial</a>-->
+ </header>
+  <!--===============================Start Demo====================================================-->
+<div ccID="607" class="demo-wrapper">
+<!-- classnames for the pages should include: 1) type of page 2) page name-->
+  <div ccID="716" class="s-page random-restored-page">
+    <h2 ccID="763" class="page-title">Some minimized App</h2>
+    <div ccID="815" class="close-button s-close-button">x</div>
+  </div>
+  <div ccID="877" class="s-page custom-page">
+    <h2 ccID="915" class="page-title">Thank You!</h2>
+    <div ccID="959" class="close-button s-close-button">x</div>
+  </div>
+  <div ccID="1021" class="r-page random-r-page">
+
+    <div ccID="1063" class="page-content">
+      <h2 ccID="1097" class="page-title">App Screen</h2>
+      <p ccID="1143">Landing Page sample for the win 8 style cards homepage 
+      </p>
+    </div>
+    
+    <div ccID="4070" class="close-button r-close-button">x</div>
+  </div>
+<!--each tile should specify what page type it opens (to determine which animation) and the corresponding page name it should open-->
+  <div ccID="4267" class="dashboard clearfix">
+    <ul ccID="4305" class="tiles">
+      <div ccID="4331" class="col1 clearfix">
+        <li ccID="4368" class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
+          <div ccID="4480"><p ccID="4485">CloudCARDS Email</p></div>
+          <div ccID="4526"><p ccID="4531"></p></div>
+        </li>
+        <li ccID="4569" class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name ="random-restored-page">
+          <div ccID="4699"><p ccID="4704" class="icon-arrow-right"></p></div>
+          <div ccID="4754"><p ccID="4759">Photos</p></div>
+        </li>
+        <li ccID="4803" class="tile tile-small last tile-3" data-page-type="r-page" data-page-name="random-r-page">
+          <p ccID="4910" class="icon-calendar-alt-fill"></p>
+        </li>
+        <li ccID="4973" class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
+          <figure ccID="5082">
+            <img ccID="5104" src="images/blue.jpg" />
+            <figcaption ccID="5147" class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+          </figure>
+        </li>
+      </div>
+
+      <div ccID="5293" class="col2 clearfix">
+        <li ccID="5330" class="tile tile-big tile-5" data-page-type="r-page" data-page-name="random-r-page">
+          <div ccID="5430"><p ccID="5435"><span ccID="5438" class="icon-cloudy"></span>Organiser</p></div>
+        </li>
+        <li ccID="5515" class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
+          <div ccID="5629"><p ccID="5634"><span ccID="5637" class="icon-skype"></span>Skype</p></div>
+          <div ccID="5696"><p ccID="5701">Make a Call</p></div>
+        </li>
+        <!--Tiles with a 3D effect should have the following structure:
+            1) a container inside the tile with class of .faces
+            2) 2 figure elements, one with class .front and the other with class .back-->
+        <li ccID="5979" class="tile tile-small tile-7 rotate3d rotate3dX" data-page-type="r-page" data-page-name="random-r-page">
+          <div ccID="6100" class="faces">
+            <div ccID="6133" class="front"><span ccID="6152" class="icon-picassa"></span></div>
+            <div ccID="6206" class="back"><p ccID="6224">Launch Picture viewer</p></div>
+          </div>
+        </li>
+        <li ccID="6301" class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-type="r-page" data-page-name="random-r-page">
+          <div ccID="6427" class="faces">
+            <div ccID="6460" class="front"><span ccID="6479" class="icon-instagram"></span></div>
+            <div ccID="6535" class="back"><p ccID="6553">Launch webcam</p></div>
+          </div>
+        </li>
+      </div>
+
+      <div ccID="6636" class="col3 clearfix">      
+        <li ccID="6679" class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
+          <figure ccID="6795">
+            <img ccID="6817" src="images/summer.jpg" />
+            <figcaption ccID="6862" class="tile-caption caption-bottom"> www.alina.ie
+            </figure>
+        </li>
+        <li ccID="6962" class="tile tile-big tile-10" data-page-type="s-page" data-page-name="custom-page">
+          <div ccID="7061"><p ccID="7066">     Contact Me!</p></div>
+        </li>
+      </div>
+    </ul>
+  </div><!--end dashboard-->
+
+</div>
+<!--====================================end demo wrapper================================================-->
+  <script ccID="7288" src="js/jquery-1.8.2.min.js"></script>
+  <script ccID="7338" src="js/scripts.js"></script>
+
+</body>
+</html>
